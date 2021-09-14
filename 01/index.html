@@ -45,13 +45,25 @@
       </div>
       <div id="content">
         <marquee>歡迎光臨校園社團介紹網，參觀後請支持社團活動並熱烈參與</marquee>
-        <iframe src="main.html" name="iframe" scrolling="auto" frameborder="0"></iframe>
+        <iframe id="myframe" src="main.html" name="iframe" scrolling="auto" frameborder="0"></iframe>
       </div>
       <div id="footer">
         <span>網頁設計及維護：00張凱富</span>
       </div>
     </div>
   </div>
+
+  <script>
+    const checkmenu = document.querySelector('#checkmenu')
+    const sidebar = document.querySelector('#sidebar')
+    sidebar.addEventListener('click', function () {
+      if (checkmenu.checked === false) {
+        checkmenu.checked = true
+      } else {
+        checkmenu.checked = false
+      }
+    })
+  </script>
 </body>
 
 </html>
