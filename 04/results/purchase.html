@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>無標題文件</title>
+  <style>
+    table {
+      margin: auto;
+    }
+
+    table td {
+      text-align: center;
+      background: #FFFF99;
+    }
+
+    table td img {
+      height: 150px;
+      width: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <form name="form1">
+    <table border="1" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="400" height="100" valign="middle">真皮皮包</td>
+        <td width="400" height="100" valign="middle">真皮短夾</td>
+      </tr>
+      <tr>
+        <td width="400" height="150" valign="middle"><img src="../images/0403.jpg" width="694" height="417" /></td>
+        <td width="400" height="150" valign="middle"><img src="../images/0404.jpg" width="568" height="396" /></td>
+      </tr>
+      <tr>
+        <td width="400" height="100" valign="middle">
+          <input name="R1" type="radio" value="購買" checked="checked" />購買
+          <input type="radio" name="R1" value="不購買" />不購買
+          <input type="radio" name="R1" value="考慮中" />考慮中
+        </td>
+        <td width="400" height="100" valign="middle">
+          <input type="radio" name="R2" value="購買" />購買
+          <input type="radio" name="R2" value="不購買" />不購買
+          <input name="R2" type="radio" value="考慮中" checked="checked" />考慮中
+        </td>
+      </tr>
+    </table>
+    <p style="text-align:center">
+      <input id="submitBtn" type="submit" value="送出" />
+      <input type="reset" value="重置" />
+    </p>
+  </form>
+
+  <script>
+    const submitBtn = document.querySelector('#submitBtn')
+    submitBtn.addEventListener('click', handler)
+    function handler() {
+      alert(`流行皮件選購確認：\r\r●真皮皮包： ${form1.R1.value} \r●真皮短夾： ${form1.R2.value}`)
+      // alert('流行皮件選購確認：\r\r●真皮皮包：' + form1.R1.value + '\r●真皮短夾：' + form1.R2.value)
+    }
+  </script>
+</body>
+
+</html>
