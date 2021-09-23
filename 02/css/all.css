@@ -10,15 +10,10 @@ body {
   background-color: #42413c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: smooth;
-  }
-}
-
 .container {
   margin: auto;
   display: flex;
+  width: 1024px;
 }
 
 #top {
@@ -37,6 +32,7 @@ body {
   font-size: 52px;
   color: #fff;
   text-shadow: 10px 10px 15px #333333;
+  width: calc(100% - 180px);
 }
 
 #menu .menu-list {
@@ -84,34 +80,4 @@ body {
   color: #fff;
   background-color: #cccccc;
   line-height: 22.5px;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1024px;
-  }
-
-  #top .top-title {
-    width: calc(100% - 180px);
-  }
-
-  #menu .menu-list {}
 }
