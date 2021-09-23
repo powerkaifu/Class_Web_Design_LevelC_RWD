@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background-color: #42413c;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+.container {
+  margin: auto;
+  display: flex;
+}
+
+#top {
+  display: flex;
+}
+
+#top .top-logo {
+  width: 180px;
+  height: 90px;
+}
+
+#top .top-title {
+  background: #00b0f0;
+  text-align: center;
+  line-height: 90px;
+  font-size: 52px;
+  color: #fff;
+  text-shadow: 10px 10px 15px #333333;
+}
+
+#menu .menu-list {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+#menu .menu-list li {
+  text-align: center;
+  flex: 1;
+}
+
+#menu .menu-list a {
+  color: #000000;
+  text-decoration: none;
+  background-color: #eeeeee;
+  display: block;
+  height: 25px;
+  line-height: 25px;
+}
+
+#menu .menu-list a:hover {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff0000;
+  background-color: #ffff00;
+  cursor: pointer;
+}
+
+#content {
+  height: 608px;
+  width: 1024px;
+  padding: 20px;
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+#footer {
+  height: 45px;
+  width: 1024px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: #cccccc;
+  line-height: 22.5px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  #top .top-title {
+    width: calc(100% - 180px);
+  }
+
+  #menu .menu-list {}
+}
