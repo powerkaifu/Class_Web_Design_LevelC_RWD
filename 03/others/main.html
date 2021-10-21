@@ -1,49 +1,61 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>無標題文件</title>
-  <style type="text/css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
     body {
       background-image: url(../images/park0301.jpg);
+      font-family: 'Noto Sans TC', sans-serif;
     }
 
     div {
       width: 400px;
       height: 600px;
       margin: auto;
-      text-align: center;
       position: relative;
     }
 
-    #sheipa {
-      width: 130px;
-      height: 30px;
-      background: rgba(0, 0, 0, 0.5);
-      position: absolute;
-      left: 180px;
-      top: 45px;
+    p {
+      color: #f0f;
+      text-align: right;
     }
 
     #yangmingshan {
-      width: 130px;
+      width: 120px;
       height: 30px;
+      border-radius: 15px;
+      /* 製作遮色片才知道目前位置 */
       background: rgba(0, 0, 0, 0.5);
       position: absolute;
-      left: 115px;
+      left: 187px;
+      top: 45px;
+    }
+
+    #sheipa {
+      width: 120px;
+      height: 30px;
+      border-radius: 15px;
+      /* 製作遮色片才知道目前位置 */
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      left: 122px;
       top: 190px;
     }
   </style>
 </head>
 
 <body>
-  <div style="text-align:center">
-    <img src="../images/national_park.jpg" width="400" height="600" usemap="#Map" border="0" />
-    <a id="sheipa" href="../park/sheipa.html"></a>
+  <div>
+    <img src="../images/national_park.jpg" width="400" height="600" />
     <a id="yangmingshan" href="../park/yangmingshan.html"></a>
+    <a id="sheipa" href="../park/sheipa.html"></a>
   </div>
-  <p style="text-align:right;color:#FF00FF">資料來源：內政部營建署『臺灣的國家公園』網站</p>
+  <p>資料來源：內政部營建署『臺灣的國家公園』網站</p>
 </body>
 
 </html>

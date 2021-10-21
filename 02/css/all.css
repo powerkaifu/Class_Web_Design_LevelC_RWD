@@ -43,41 +43,41 @@ body {
 
 #menu .menu-list li {
   text-align: center;
+  height: 25px;
   flex: 1;
 }
 
 #menu .menu-list a {
   color: #000000;
-  text-decoration: none;
   background-color: #eeeeee;
-  display: block;
-  height: 25px;
   line-height: 25px;
+  text-decoration: none;
+  display: block;
 }
 
 #menu .menu-list a:hover {
-  font-size: 14px;
-  font-weight: bold;
   color: #ff0000;
   background-color: #ffff00;
+  font-size: 14px;
+  font-weight: bold;
   cursor: pointer;
 }
 
 #content {
   height: 608px;
   width: 1024px;
-  padding: 20px;
-  font-size: 14px;
   color: #000000;
   background-color: #ffffff;
+  font-size: 14px;
+  padding: 20px;
 }
 
 #footer {
   height: 45px;
   width: 1024px;
-  text-align: center;
-  font-size: 14px;
   color: #fff;
   background-color: #cccccc;
+  font-size: 14px;
+  text-align: center;
   line-height: 22.5px;
 }

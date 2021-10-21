@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background-color: #FFFFCC;
+      text-align: center;
+    }
+
+    p {
+      text-decoration: underline;
+      color: #0000FF;
+      font-weight: bolder;
+      font-size: 20px;
+    }
+
+    table {
+      margin: auto;
+    }
+
+    #big {
+      height: 300px;
+      width: 400px;
+      border: 5px solid #00F;
+    }
+
+    .s {
+      height: 45px;
+      width: 60px;
+      border: medium solid #00F;
+    }
+
+    .s:hover {
+      border: medium solid #0FF;
+    }
+  </style>
+</head>
+
+<body>
+  <p>蘭嶼賞魚去</p>
+  <table>
+    <tr>
+      <td colspan="5"><img id="big" src="../images/0551.jpg" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#">
+          <img id="s1" class="s" src="../images/0551.jpg" />
+        </a>
+      </td>
+      <td>
+        <a href="#">
+          <img id="s2" class="s" src="../images/0552.jpg" />
+        </a>
+      </td>
+      <td>
+        <a href="#">
+          <img id="s3" class="s" src="../images/0553.jpg" />
+        </a>
+      </td>
+      <td>
+        <a href="#">
+          <img id="s4" class="s" src="../images/0554.jpg" />
+        </a>
+      </td>
+      <td>
+        <a href="#">
+          <img id="s5" class="s" src="../images/0555.jpg" />
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+
+  <script>
+    // 第一種
+    // $('#s1').on('click', function (e) {
+    //   e.preventDefault()
+    //   $('#big').attr('src', '../images/0551.jpg')
+    // })
+    // $('#s2').on('click', function (e) {
+    //   e.preventDefault()
+    //   $('#big').attr('src', '../images/0552.jpg')
+    // })
+    // $('#s3').on('click', function (e) {
+    //   e.preventDefault()
+    //   $('#big').attr('src', '../images/0553.jpg')
+    // })
+    // $('#s4').on('click', function (e) {
+    //   e.preventDefault()
+    //   $('#big').attr('src', '../images/0554.jpg')
+    // })
+    // $('#s5').on('click', function (e) {
+    //   e.preventDefault()
+    //   $('#big').attr('src', '../images/0555.jpg')
+    // })
+
+    // 第二種
+    $('.s').each(function (index, target) {
+      $(this).on('click', function (e) {
+        e.preventDefault()
+        if ($(this).attr('id') === 's1') $('#big').attr('src', '../images/0551.jpg')
+        if ($(this).attr('id') === 's2') $('#big').attr('src', '../images/0552.jpg')
+        if ($(this).attr('id') === 's3') $('#big').attr('src', '../images/0553.jpg')
+        if ($(this).attr('id') === 's4') $('#big').attr('src', '../images/0554.jpg')
+        if ($(this).attr('id') === 's5') $('#big').attr('src', '../images/0555.jpg')
+      })
+    })
+  </script>
+</body>
+
+</html>
