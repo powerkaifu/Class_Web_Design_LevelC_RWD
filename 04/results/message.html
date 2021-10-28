@@ -1,9 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>無標題文件</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
   <style>
     #company,
     #message {
@@ -18,6 +21,19 @@
       border: 1px solid #000;
     }
 
+    #company {
+      margin-top: 1rem;
+      background: #FFDDDD;
+    }
+
+    #message {
+      background: #FFFF99;
+    }
+
+    #message td:nth-child(2) {
+      text-align: left;
+    }
+
     table td:nth-child(1) {
       width: 150px;
       height: 32px;
@@ -28,17 +44,9 @@
       height: 32px;
     }
 
-    #company {
-      margin-top: 50px;
-      background: #FFDDDD;
-    }
-
-    #message {
-      background: #FFFF99;
-    }
-
-    #message td:nth-child(2) {
-      text-align: left;
+    div {
+      text-align: center;
+      margin-top: 1rem;
     }
   </style>
 </head>
@@ -58,7 +66,9 @@
       <td>網路購物服務</td>
     </tr>
   </table>
+
   <br />
+
   <form>
     <table id="message" border="1" cellpadding="0" cellspacing="0">
       <tr>
@@ -78,10 +88,10 @@
         </td>
       </tr>
     </table>
-    <p style="text-align:center;">
+    <div>
       <input type="submit" onclick="alert('歡迎蒞臨本網站，您的寶貴意見我們會儘速處 理與回覆，謝謝！')" value="送出" />
       <input type="reset" value="重置" />
-    </p>
+    </div>
   </form>
 
 </body>

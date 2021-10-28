@@ -7,7 +7,6 @@
 
 body {
   font-family: 'Noto Sans TC', sans-serif;
-
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24,7 +23,7 @@ body {
   background-image: url(../images/0401.jpg);
   font-size: 40px;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   line-height: 120px;
   display: block;
@@ -32,13 +31,12 @@ body {
 }
 
 #marquee {
+  height: 30px;
+  width: 100%;
   background-image: url(../images/0402.jpg);
-}
-
-#marquee marquee {
   font-size: 19px;
+  color: #00f;
   line-height: 30px;
-  color: #00F;
 }
 
 #content {
@@ -53,16 +51,16 @@ body {
 #footer {
   background-color: #666600;
   line-height: 2;
-  color: #FFF;
+  color: #fff;
 }
 
 #footer a {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
 #footer a:visited {
-  color: #FF9999;
+  color: #ff9999;
 }
 
 @media (min-width: 576px) {
@@ -97,11 +95,6 @@ body {
     font-size: 52px;
   }
 
-  #marquee {
-    height: 30px;
-    width: 100%;
-  }
-
   #content {
     background-image: url(../images/0402.jpg);
     height: 540px;
@@ -112,7 +105,6 @@ body {
     width: 1024px;
     height: 540px;
   }
-
 
   #footer {
     height: 78px;
