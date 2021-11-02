@@ -16,7 +16,7 @@
 
 <body>
   <!-- <embed src="./music/0501.mp3" width="0" height="0" hidden="true" autostart="true" loop="true"></embed> -->
-  <audio src="./music/0501.mp3" loop autoplay></audio>
+  <!-- <audio src="./music/0501.mp3" loop autoplay></audio> -->
   <div id="main">
     <input id="toggle_menu" type="checkbox">
     <div id="left">
@@ -40,9 +40,10 @@
       </div>
     </div>
   </div>
+  <!-- jQuery 3.6.0 -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
   <script>
-    $('.menu li a img').hover(overHandler, outHandler)
+    $('.menu li img').hover(overHandler, outHandler)
     function overHandler(e) {
       // console.log(e.target.src.slice(-9))
       if (e.target.src.slice(-9) === '0501b.gif') e.target.src = './images/0501r.gif'
